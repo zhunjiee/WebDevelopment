@@ -2,12 +2,12 @@ body {
 	background-color: #f3f5f7;
 }
 
+/* 顶部开始 */
 .header {
 	width: 1300px;
 	height: 100px;
 	margin: 0 auto;
 	padding-top: 30px;
-	background-color: antiquewhite;
 }
 
 .logo {
@@ -15,12 +15,11 @@ body {
 	height: 42px;
 	float: left;
 }
-
 .logo a {
 	display: block;
 	width: 195px;
 	height: 42px;
-	background: url(../images/logo.jpg) no-repeat center;
+	background: url(../images/logo.png) no-repeat;
 	/* 隐藏链接里的文字 */
 	text-indent: -999px;	
 	overflow: hidden;
@@ -30,7 +29,6 @@ body {
 	float: left;
 	margin-left: 20px;
 }
-
 .nav li {
 	float: left;
 	height: 40px;
@@ -43,6 +41,10 @@ body {
 	font-style: 18px;
 	padding: 0 10px;
 }
+.nav li a:hover {
+	color: #00a4ff;
+	border-bottom: 2px solid #00a4ff;
+}
 .search {
 	float: left;
 	width: 410px;
@@ -50,3 +52,124 @@ body {
 	background-color: #DDDDDD;
 	margin-left: 160px;
 }
+.search input {
+	width: 361px;
+	height: 40px;
+	border: 1px solid #00A4FF;
+	padding-left: 10px;
+	/* 浮动是为了解决input和button的问题 */
+	float: left;
+}
+.search button {
+	width: 49px;
+	height: 40px;
+	border: 0 none;
+	outline: none;
+	background: url(../images/fa-search.png) no-repeat;
+	/* 浮动是为了解决input和button的问题 */
+	float: left;
+}
+
+.personal {
+	float: right;
+	height: 40px;
+	line-height: 40px;
+}
+.personal dt, .personal dd {
+	float: left;
+}
+
+/* 铃铛上绘制红点 */
+.personal em {
+	position: relative;
+	padding: 0 20px;
+}
+.personal em::before {
+	content: '';
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	top: 0;
+	right: 15px;
+}
+
+.personal span img {
+	border-radius: 50%;
+	margin-right: 10px;
+	transition: all 0.6s;
+}
+.personal span img:hover {
+	transform: rotate(-360deg);
+}
+/* 顶部结束 */
+
+/* banner开始 */
+.banner {
+	height: 420px;
+	background-color: #1c036c;
+}
+.banner .inner {
+	height: 420px;
+	position: relative;
+}
+.banner .sub_nav {
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 190px;
+	background-color: rgba(0, 0, 0, .3);
+}
+.sub_nav li {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	position: relative;
+}
+.sub_nav a {
+	display: block;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.sub_nav a:hover {
+	color: #00A4FF;
+}
+.sub_nav span {
+	position: absolute;
+	right: 20px;
+}
+
+.banner .slider .circle {
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	margin-left: -100px;
+}
+.circle li {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background-color: rgba(255, 255, 255, 0.4);
+	margin: 0 5px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+.circle li:hover, .circle .current {
+	width: 20px;
+	background-color: #fff;
+}
+
+.banner .timebook {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -150px;
+	width: 228px;
+	height: 300px;
+	background-color: #FF0000;
+	
+}
+/* banner结束 */

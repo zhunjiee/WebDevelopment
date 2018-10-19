@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>京东效果</title>
+		<style type="text/css">
+			ul, li {
+				list-style: none;
+			}
+			.jd-shop li {
+				float: left;
+				margin-left: 20px;
+				width: 183px;
+				height: 130px;
+				overflow: hidden;
+			}
+			.jd-shop li img {
+				width: 193px;
+				height: 130px;
+				transition: margin-left 0.4s; 
+			}
+			.jd-shop li a:hover {
+				margin-left: -10px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="jd-shop">
+			<li><a href="#"><img src="images/1.jpg" alt="#"></a></li>
+			<li><a href="#"><img src="images/2.jpg" alt="#"></a></li>
+			<li><a href="#"><img src="images/3.jpg" alt="#"></a></li>
+		</ul>
+	</body>
+</html>

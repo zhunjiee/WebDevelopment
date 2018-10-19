@@ -5,6 +5,7 @@ body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd{
     /*字体设置*/
     font-size: 14px;
     font-family: "Microsoft Yahei", sans-serif, tahoma;
+	color: #666;
     /* 去掉列表的原点 */
     list-style: none;
     /* 默认鼠标 */
@@ -17,7 +18,7 @@ input,img{
     padding: 0;
     border: 0 none;
     outline-style: none;
-    vertical-align: bottom; 
+    vertical-align: middle; 
 }
 
 /*行内元素*/
@@ -28,7 +29,7 @@ a,a:active,a:visited{
 }
 
 a:hover{
-    color: #c81623;
+
 }
 
 textarea{
@@ -69,6 +70,6 @@ table{
  
 /* 版心*/
 .w{
-    width: 1883px;
+    width: 1200px;
     margin: 0 auto;
 }

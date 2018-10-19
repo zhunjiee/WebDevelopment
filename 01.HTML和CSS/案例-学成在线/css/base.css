@@ -29,7 +29,7 @@ a,a:active,a:visited{
 }
 
 a:hover{
-
+	color: #c81623;
 }
 
 textarea{
@@ -57,14 +57,14 @@ table{
 }
  
 /* 使用伪元素清除浮动 */
-.claerfix::after {
+.clearfix::after {
 	content: '';
 	display: block;
 	height: 0;
 	visibility: hidden;
 	clear: both;
 }
-.claerfix {
+.clearfix {
 	*zoom: 1;
 }
  

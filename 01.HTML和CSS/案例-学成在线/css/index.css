@@ -2,7 +2,7 @@ body {
 	background-color: #f3f5f7;
 }
 
-/* 顶部开始 */
+/* 顶部 开始 */
 .header {
 	width: 1300px;
 	height: 100px;
@@ -104,9 +104,9 @@ body {
 .personal span img:hover {
 	transform: rotate(-360deg);
 }
-/* 顶部结束 */
+/* 顶部 结束 */
 
-/* banner开始 */
+/* banner 开始 */
 .banner {
 	height: 420px;
 	background-color: #1c036c;
@@ -115,6 +115,7 @@ body {
 	height: 420px;
 	position: relative;
 }
+/* 子导航 */
 .banner .sub_nav {
 	position: absolute;
 	left: 0;
@@ -145,7 +146,8 @@ body {
 	position: absolute;
 	bottom: 15px;
 	left: 50%;
-	margin-left: -100px;
+	/* margin-left: -100px; */
+	transform: translate(-50%);
 }
 .circle li {
 	display: inline-block;
@@ -162,14 +164,186 @@ body {
 	background-color: #fff;
 }
 
+
+/* 课程表 */
 .banner .timebook {
 	position: absolute;
-	right: 0;
-	top: 50%;
-	margin-top: -150px;
 	width: 228px;
 	height: 300px;
-	background-color: #FF0000;
-	
+	right: 0;
+	top: 50%;
+	/* margin-top: -150px; */
+	transform: translateY(-50%);
+	background-color: #FFFFFF;
 }
-/* banner结束 */
+.timebook dt {
+	height: 50px;
+	line-height: 50px;
+	font-weight: 700;
+	color: #FFFFFF;
+	background-color: #9bceea;
+	text-align: center;
+	font-size: 18px;
+}
+.timebook dd {
+	padding: 15px 20px 0;
+}
+.timebook dd li {
+	height: 50px;
+	border-bottom: 1px solid #ccc;
+	padding-top: 6px;
+}
+.timebook h5 {
+	font-size: 16px;
+	font-weight: normal;
+}
+.timebook li p {
+	font-size: 12px;
+}
+/* 去除最后一个底边框 */
+.timebook li:last-child {
+	border: 0;
+}
+.timebook .all-class {
+	border: 1px solid #22b0ff;
+	color: #22B0FF;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 6px;
+}
+.timebook .all-class:hover {
+	color: #FFFFFF;
+	background-color: #22B0FF;
+}
+/* banner 结束 */
+
+/* 精品推荐 开始 */
+.recommend {
+	height: 60px;
+	margin-top: 10px;
+	background-color: #FFFFFF;
+	line-height: 60px;
+	box-shadow: 0px 1px 12px rgba(0, 0, 0, .4);
+}
+.recommend .reco-l {
+	float: left;
+}
+.recommend .reco-l strong {
+	color: #22B0FF;
+	margin: 0px 10px 0px 30px;
+}
+.recommend .reco-l a {
+	font-size: 14px;
+	margin: 0 15px;
+}
+.recommend .reco-r {
+	float: right;
+	margin-right: 20px;
+	font-size: 12px;
+}
+/* 精品推荐 结束 */
+
+/* 精品产品 开始 */
+.products {
+	margin-top: 30px;
+}
+.products .product-hd {
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+}
+.products .product-hd h4 {
+	font-size: 18px;
+}
+.products .product-hd a {
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+.product {
+	background-color: #FFFFFF;
+	width: 228px;
+	height: 270px;
+	overflow: hidden;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	transition: all 0.4s;
+}
+.product:hover {
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, .3);
+	transform: translateY(-6px);
+}
+
+.product:nth-child(5n) {
+	margin-right: 0;
+}
+.product .pro-pic {
+	transition: all .4s; 
+}
+.product .pro-pic:hover {
+	margin-left: -5px;
+}
+.product .pro-title {
+	margin: 20px auto;
+	width: 185px;
+	font-size: 14px;
+	color: #050505;
+}
+.product .number {
+	width: 185px;
+	margin: 20px auto;
+	color: #999;
+	font-size: 12px;
+}
+.product .number span {
+	color: #ff7c2d;
+}
+/* 精品产品 结束 */
+
+/* 页面底部 开始 */
+.footer {
+	background-color: #FFFFFF;
+	height: 300px;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+.footer-l {
+	float: left;
+}
+.footer-l img {
+	margin-bottom: 20px;
+}
+.footer-l p {
+	font-size: 12px;
+	margin-top: 10px;
+}
+.footer-l a {
+	display: block;
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin-top: 20px;
+	border: 1px solid #22B0FF;
+	color: #22B0FF;
+	background-color: #FFFFFF;
+}
+.footer-r {
+	float: right;
+}
+.footer-r dl {
+	float: left;
+	margin-left: 130px;
+}
+.footer-r dl dt {
+	color: #333;
+	height: 30px;
+}
+.footer-r dl dd {
+	font-size: 12px;
+	height: 20px;
+}
+/* 页面底部 结束 */

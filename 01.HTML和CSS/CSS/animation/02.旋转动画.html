@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>旋转动画</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.demo {
+				width: 214px;
+				height: 214px;
+				position: relative;
+			}
+			.demo p {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				line-height: 214px;
+				text-align: center;
+			}
+			
+			.demo img {
+				animation:Rotate 2s linear infinite;
+			}
+			
+			@keyframes Rotate {
+				from {
+					transform: rotate(0deg);
+				} to {
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="demo">
+			<img src="images/web.png" >
+			<p>web 前端</p>
+		</div>
+	</body>
+</html>

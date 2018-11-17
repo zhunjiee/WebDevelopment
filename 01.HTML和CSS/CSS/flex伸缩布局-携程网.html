@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>携程在手，说走就走</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			html, body {
+				min-width: 320px;
+				max-width: 540px;
+				margin: 0 auto;
+				font: normal 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+			}
+			a {
+				text-decoration: none;
+				color: #FFFFFF;
+				text-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+			}
+			header {
+				height: 108px;
+			}
+			header img {
+				height: 100%;
+				width: auto;
+			}
+			nav {
+				padding: 4px;
+			}
+			.row {
+				height: 90px;
+				display: flex;
+				border-radius: 5px;
+				overflow: hidden;
+				margin-bottom: 5px;
+			}
+			.row div {
+				flex: 1;
+				background-color: #FF697A;
+				margin-right: 1px;
+			}
+			.nav-flight div {
+				background-color: #00A4FF;
+			}
+			.row div:last-child {
+				margin-right: 0;
+			}
+			.big-ceil em {
+				display: block;
+				font-style: normal;
+				height: 45px;
+				text-align: center;
+				line-height: 45px;
+			}
+			.big-ceil i {
+				display: block;
+				width: 43px;
+				height: 43px;
+				margin: -5px auto 0;
+				background: url(images/ctrip.png) no-repeat 0 -124px;
+				/* 背景缩放为原来的一半，屏幕适配 */
+				background-size: 104px;
+			}
+			.big-ceil .icon-flight {
+				background-position: 0 -288px;
+			}
+			.small-ceil {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				line-height: 45px;
+			}
+			.small-ceil a {
+				flex: 1;
+				border-bottom: 1px solid #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="images/banner.jpg" alt="banner">
+		</header>
+		<nav>
+			<div class="row">
+				<div class="big-ceil">
+					<a href="#">
+						<em>酒店</em>
+						<i></i>
+					</a>
+				</div>
+				<div class="small-ceil">
+					<a href="#">海外酒店</a>
+					<a href="#">特价酒店</a>
+				</div>
+				<div class="small-ceil">
+					<a href="#">团购</a>
+					<a href="#">民宿·客栈</a>
+				</div>
+			</div>
+			<div class="row nav-flight">
+				<div class="big-ceil">
+					<a href="#">
+						<em>机票</em>
+						<i class="icon-flight"></i>
+					</a>
+				</div>
+				<div class="small-ceil">
+					<a href="#">海外酒店</a>
+					<a href="#">特价酒店</a>
+				</div>
+				<div class="small-ceil">
+					<a href="#">团购</a>
+					<a href="#">民宿·客栈</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-ceil">
+					<a href="#">海外酒店</a>
+					<a href="#">特价酒店</a>
+				</div>
+				<div class="small-ceil">
+					<a href="#">海外酒店</a>
+					<a href="#">特价酒店</a>
+				</div>
+				<div class="small-ceil">
+					<a href="#">团购</a>
+					<a href="#">民宿·客栈</a>
+				</div>
+			</div>
+		</nav>
+	</body>
+</html>

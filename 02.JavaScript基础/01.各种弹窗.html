@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript各种弹窗示例</title>
+		<script type="text/javascript">
+			window.onload = function() {
+				var btns = document.getElementsByTagName('button');
+								
+				btns[0].onclick = function() {
+					console.log('控制台打印的普通信息');
+				}
+				
+				btns[1].addEventListener('click', function() {
+					console.warn('控制台警告信息!!!');
+				});
+				
+				btns[2].addEventListener('click', function(){
+					console.error('控制台打印错误信息');
+				});
+				
+				btns[3].onclick = function() {
+					alert('提示的内容！');
+				}
+				
+				btns[4].onclick = function() {
+					var name = prompt('请输入您的名字：', '默认文字');
+					console.log(name);
+				}
+				
+				btns[5].onclick = function() {
+					var result = confirm('请选择‘确定’或者‘取消’');
+					if (result == true) {
+						console.log('你选择了‘是’');
+					} else {
+						console.log('你选择了‘否’');
+					}
+				}
+			}
+		</script>
+	</head>
+	
+	<body>
+		<ul>
+			<li><button>console.log</button></li>
+			<li><button>console.warn</button></li>
+			<li><button>console.error</button></li>
+			<li><button>alert</button></li>
+			<li><button>prompt</button></li>
+			<li><button>confirm</button></li>
+		</ul>
+	</body>
+</html>
+

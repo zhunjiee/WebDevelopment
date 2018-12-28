@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="变色" id="btn" />
+		<ul id="uu">
+			<li>爆炒助教</li>
+			<li>油炸班主任</li>
+			<li>清蒸小苏</li>
+			<li>红烧班长</li>
+			<li>红烧肉</li>
+			<li>糖醋排骨</li>
+			<li>凉拌秋葵</li>
+			<li>鱼香胡萝卜丝</li>
+		</ul>
+		
+		
+		<script type="text/javascript">
+			document.getElementById('btn').onclick = function() {
+				var list = document.getElementById('uu').children;
+				for (var i = 0; i < list.length; i++) {
+					if(i % 2 == 0) {
+						list[i].style.backgroundColor = 'red';
+					} else {
+						list[i].style.backgroundColor = 'yellow';
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

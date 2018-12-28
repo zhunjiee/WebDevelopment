@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="dv">哦哦
+			<span>这是div中的第一个span标签</span>
+			<p>这是div中的第二个元素,第一个p标签</p>
+			<ul id="uu">哈哈
+				<li>乔峰</li>
+				<li>鹿茸</li>
+				<li id="three">段誉</li>
+				<li>卡卡西</li>
+				<li>雏田</li>
+			</ul>
+		</div>
+		
+		<script type="text/javascript">
+			var ulObj = document.getElementById('uu');
+			
+			// 父级节点
+			console.log(ulObj.parentNode);
+			// 父级元素
+			console.log(ulObj.parentElement);
+			// 子节点
+			console.log(ulObj.childNodes);
+			// 子元素
+			console.log(ulObj.children);
+			
+			console.log('============================= 华丽的分割线 ==========================');
+			// 第一个子节点
+			console.log(ulObj.firstChild);	// ----------------------- IE8是第一个子元素
+			// 第一个子元素
+			console.log(ulObj.firstElementChild);	// --------------- IE8不支持
+			
+			// 最后一个子节点
+			console.log(ulObj.lastChild);	// 同上
+			// 最后一个子元素
+			console.log(ulObj.lastElementChild);	// --------------- IE8不支持
+			
+			
+			var three = document.getElementById('three');
+			
+			console.log(three.previousSibling);
+			console.log(three.previousElementSibling);	// --------------- IE8不支持
+			
+			console.log(three.nextSibling);
+			console.log(three.nextElementSibling);	// --------------- IE8不支持
+		</script>
+	</body>
+</html>

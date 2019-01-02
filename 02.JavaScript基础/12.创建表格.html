@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>动态创建表格</title>
+		<style type="text/css">
+			table {
+				text-align: center;
+				border-spacing: 0;
+				border-collapse: collapse;
+			}
+			table tbody tr th,td {
+				border: 1px solid #CCCCCC;
+			}
+		</style>
+	</head>
+	<body>
+		<button type="button" id="btn">创建表格</button>
+		<div id="dv"></div>
+
+
+		<script type="text/javascript">
+			var arr = [{
+					name: '百度',
+					href: 'http://www.baidu.com'
+				},
+				{
+					name: "谷歌",
+					href: "http://www.google.com"
+				},
+				{
+					name: "优酷",
+					href: "http://www.youku.com"
+				},
+				{
+					name: "土豆",
+					href: "http://www.tudou.com"
+				},
+				{
+					name: "快播",
+					href: "http://www.kuaibo.com"
+				},
+				{
+					name: "爱奇艺",
+					href: "http://www.aiqiyi.com"
+				}
+			];
+			
+			
+			document.getElementById('btn').onclick = function() {
+				var table = document.createElement('table');
+				var dv = document.getElementById('dv');
+				dv.appendChild(table);
+				
+				for (var i = 0; i < arr.length; i++) {
+					var dt = arr[i];
+					var tr = document.createElement('tr');
+					var td1 = document.createElement('td');
+					td1.innerText = dt.name;
+					tr.appendChild(td1);
+					var td2 =document.createElement('td');
+					td2.innerText = dt.href;
+					tr.appendChild(td2);
+					table.appendChild(tr);
+				}
+			}
+		</script>
+	</body>
+</html>

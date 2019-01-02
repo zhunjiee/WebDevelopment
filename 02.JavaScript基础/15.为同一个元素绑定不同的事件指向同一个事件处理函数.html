@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button type="button">点击</button>
+		
+		<script type="text/javascript">
+			var btn = document.getElementsByTagName('button')[0];
+			btn.onclick = f1;
+			btn.onmouseover = f1;
+			btn.onmouseout = f1;
+			
+			function f1(e) {
+				switch (e.type){
+					case 'click':
+						alert('哈哈');
+						break;
+					case 'mouseover':
+						this.style.backgroundColor = 'red';
+						break;
+					case 'mouseout':
+						this.style.backgroundColor = 'green';
+						break;
+					default:
+						break;
+				}
+			}
+		</script>
+	</body>
+</html>

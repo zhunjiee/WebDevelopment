@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>美女时钟</title>
+	</head>
+	<body>
+		<img src="" alt="#" id="image">
+		
+		<script type="text/javascript">
+			function pictureView() {
+				var dt = new Date();
+				var hour = dt.getHours();
+				var second = dt.getMinutes();
+				
+				hour = hour < 10 ? '0' + hour : hour;
+				second = second < 10 ? '0' + second : second;
+				var image = document.getElementById('image');
+				image.src = 'meimei/' + hour + '_' + second + '.jpg';
+			}
+			
+			pictureView();
+			// 页面加载完毕后,过1秒才执行,所以上面先手动执行一次,避免出现空白页面
+			setInterval(pictureView, 1000);
+		</script>
+	</body>
+</html>

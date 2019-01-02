@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+
+
+			#box {
+				width: 450px;
+				margin: 200px auto;
+				font-size: 0;
+			}
+
+			#txt {
+				width: 340px;
+				height: 30px;
+				padding: 0 4px;
+				font-size: 16px;
+				border: 1px solid #AAAAAA;
+				outline: none;
+				/* 设置按钮和文本框对齐，和下面#btn的vertical-align任选其一 */
+				/* vertical-align: top; */
+			}
+
+			#btn {
+				border: 0 none;
+				width: 80px;
+				height: 32px;
+				background-color: #22B0FF;
+				/* 设置按钮和文本框对齐 */
+				vertical-align: bottom;
+				color: white;
+				outline: none;
+			}
+
+			#pop {
+				width: 348px;
+				border: 1px solid red;
+				font-size: 16px;
+			}
+
+			#pop p {
+				margin: 0;
+				padding: 4px;
+			}
+
+			#pop ul li {}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<input type="text" id="txt" value="">
+			<input type="button" value="百度一下" id="btn">
+		</div>
+		
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var keyWords = ["小杨才是最纯洁的", "小杨才是最帅的", "小段是最猥琐的", "小超是最龌龊的", "传智播客是一个培训机构", "传说在传智有个很帅很纯洁的小杨", "苹果好吃", "苹果此次召回还是没有中国"];
+			
+			// 获取文本框注册键盘抬起事件
+			document.getElementById('txt').onkeyup = function() {
+				console.log('111');
+				// 4. 每次键盘抬起判断页面中有没有这个div
+				if(document.getElementById('pop')) {
+					document.getElementById('box').removeChild(document.getElementById('pop'));
+				};
+				
+				// 1.获取文本框内容与keyWords内容逐个比较
+				var text = this.value;
+				var that = this;
+				// 创建临时数组存储匹配的数据
+				var tempArr = [];
+				for (var i = 0; i < keyWords.length; i++) {
+					if(text.length != 0 && keyWords[i].indexOf(text) == 0) {	// indexOf() : 返回text在keyWords[i]字符串第一次出现的位置
+						// 2.将符合的书存起来
+						tempArr.push(keyWords[i]);
+					}
+				}
+				console.log(text);
+				console.log(tempArr);
+				if(tempArr.length != 0 && text.length != 0) {
+					// 3.创建div展示推荐的内容
+					var divObj = document.createElement('div');
+					document.getElementById('box').appendChild(divObj);
+					divObj.id = 'pop';
+
+					// 3.1创建p标签展示内容
+					for (var i = 0; i < tempArr.length; i++) {
+						var p = document.createElement('p');
+						divObj.appendChild(p);
+						p.innerText = tempArr[i];
+						
+						// 鼠标进入改变颜色
+						p.onmouseover = function() {
+							this.style.backgroundColor = '#22B0FF';
+						};
+						p.onmouseout = function() {
+							this.style.backgroundColor = '';
+						};
+						// 鼠标点击进行选择你想搜索的关键字
+						p.onclick = function() {
+							that.value = this.innerText;
+							document.getElementById('box').removeChild(document.getElementById('pop'));
+						}
+					}
+				}
+				
+			};
+		</script>
+	</body>
+</html>

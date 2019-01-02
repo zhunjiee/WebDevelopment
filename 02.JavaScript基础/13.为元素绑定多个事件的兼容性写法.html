@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<button type="button" id="btn">为元素绑定多个事件</button>
+	
+	<body>
+		
+		<script type="text/javascript">
+			// 为元素绑定事件
+			function myAddEventListener(element, type, fn) {
+				if(element.addEventListener) {
+					element.addEventListener(type, fn, false);
+				} else if(element.attachEvent) {
+					element.attachEvent('on' + type, fn);
+				} else {
+					element['on' + type] = fn;
+				}
+			}
+			
+			
+			// 解绑事件
+			function myRemveEventListener(element, type, fn) {
+				if(element.removeEventListener) {
+					element.removeEventListener(type, fn, false);
+				} else if(element.detachEvent) {
+					element.detachEvent('on' + type, fn);
+				} else {
+					element['on' + type] = null;
+				}
+			}
+			
+
+			
+			var btn = document.getElementById('btn');
+			myAddEventListener(btn, 'click', function() {
+				console.log('11111');
+			});
+			myAddEventListener(btn, 'click', function() {
+				console.log('22222');
+			});
+			myAddEventListener(btn, 'click', function() {
+				console.log('33333');
+			});
+		</script>
+	</body>
+</html>

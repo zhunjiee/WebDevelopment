@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+      width: 600px;
+      height: 600px;
+      border:2px solid yellow;
+      background-color: black;
+      position: relative;
+    }
+    span{
+      font-size: 30px;
+      color: yellow;
+      position: absolute;
+    }
+		</style>
+	</head>
+	<body>
+		<button type="button" id="btn">亮起来</button>
+		<div id="dv"></div>
+
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			document.getElementById('btn').onclick = function() {
+				setInterval(function() {
+					var dv = document.getElementById('dv');
+					dv.innerHTML = '<span>★</span>';
+					var x = parseInt(Math.random() * 600 + 1);
+					var y = parseInt(Math.random() * 600 + 1);
+					var firstEle = dv.firstElementChild || dv.firstChild;
+					firstEle.style.left = x + 'px';
+					firstEle.style.top = y + 'px';
+				}, 1);
+			}
+		</script>
+	</body>
+</html>

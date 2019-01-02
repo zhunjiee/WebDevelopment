@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#dv1 {
+				width: 300px;
+				height: 200px;
+				background-color: red;
+			}
+
+			#dv2 {
+				width: 250px;
+				height: 150px;
+				background-color: green;
+			}
+
+			#dv3 {
+				width: 200px;
+				height: 100px;
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="dv1">dv1
+			<div id="dv2">dv2
+				<div id="dv3">dv3</div>
+			</div>
+		</div>
+
+
+		<script type="text/javascript">
+			/* 
+			 事件冒泡：
+				多个元素嵌套，有层次关系，这些元素都注册了相同的事件，如果里面的元素的事件被触发了，那么外面的元素的该事件同样被触发
+			 */
+			document.getElementById('dv1').onclick = function() {
+				console.log(this.id);
+			};
+			document.getElementById('dv2').onclick = function() {
+				console.log(this.id);
+			};
+			document.getElementById('dv3').onclick = function(e) {
+				console.log(this.id);
+				// 尝试添加以下方法结果会有什么不同？
+				// stopBubble(e);
+			};
+			
+			
+			
+			// 阻止事件冒泡
+			function stopBubble(event) {
+				if(event.stopPropagation) {
+					event.stopPropagation();
+				} else {
+					event.cancelBubble = true;
+				}
+			}
+			
+		</script>
+	</body>
+</html>

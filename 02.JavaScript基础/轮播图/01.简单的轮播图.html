@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			ul {
+				list-style: none;
+			}
+
+			img {
+				vertical-align: top;
+			}
+
+			.box {
+				width: 730px;
+				height: 454px;
+				margin: 100px auto;
+				padding: 5px;
+				border: 1px solid #CCCCCC;
+			}
+
+			.inner {
+				width: 730px;
+				height: 454px;
+				background-color: pink;
+				overflow: hidden;
+				position: relative;
+			}
+
+			.inner ul {
+				width: 1000%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			.inner li {
+				float: left;
+			}
+
+			.square {
+				position: absolute;
+				right: 10px;
+				bottom: 10px;
+			}
+
+			.square span {
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				font-size: 14px;
+				background-color: #FFFFFF;
+				text-align: center;
+				line-height: 20px;
+				cursor: pointer;
+			}
+
+			.square span.current {
+				background-color: orangered;
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box" id="box">
+			<div class="inner">
+				<!--相框-->
+				<ul>
+					<li><a href="#"><img src="images/1.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/2.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/3.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/4.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/5.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="images/6.jpg" alt="" /></a></li>
+				</ul>
+				<div class="square" id="square">
+					<span class="current">1</span>
+					<span>2</span>
+					<span>3</span>
+					<span>4</span>
+					<span>5</span>
+					<span>6</span>
+				</div>
+			</div>
+		</div>
+
+
+
+		<script type="text/javascript">
+			var box = document.getElementById('box');
+			var inner = box.children[0];
+			var ul = inner.children[0];
+			console.log(ul);
+			var imgWidth = inner.offsetWidth;
+			var squares = document.getElementById('square').children;
+			for (var i = 0; i < squares.length; i++) {
+				squares[i].index = i;
+				squares[i].onmouseover = function() {
+					// 删除span的class属性
+					for (var j = 0; j < squares.length; j++) {
+						squares[j].className = '';
+					}
+					animate(ul, -this.index * imgWidth);
+					this.setAttribute('class', 'current');
+				}
+			}
+
+
+			function animate(element, target) {
+				clearInterval(element.timeId);
+				element.timeId = setInterval(function() {
+					var step = 10;
+					var current = element.offsetLeft;
+					step = current > target ? -step : step;
+					current += step;
+					if (Math.abs(current - target) > Math.abs(step)) {
+						element.style.left = current + 'px';
+					} else {
+						clearInterval(element.timeId);
+						element.style.left = target + 'px';
+					}
+				}, 1);
+			}
+		</script>
+	</body>
+</html>

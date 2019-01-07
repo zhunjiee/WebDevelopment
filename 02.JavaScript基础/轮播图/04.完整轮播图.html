@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				border: 0;
+			}
+
+			.all {
+				width: 730px;
+				height: 454/]px;
+				padding: 7px;
+				border: 1px solid #ccc;
+				margin: 100px auto;
+				position: relative;
+			}
+
+			.screen {
+				width: 730px;
+				height: 454px;
+				overflow: hidden;
+				position: relative;
+			}
+
+			.screen li {
+				width: 730px;
+				height: 454px;
+				overflow: hidden;
+				float: left;
+			}
+
+			.screen ul {
+				position: absolute;
+				left: 0;
+				top: 0px;
+				width: 1000%;
+			}
+
+			.all ol {
+				position: absolute;
+				right: 10px;
+				bottom: 10px;
+				line-height: 20px;
+				text-align: center;
+			}
+
+			.all ol li {
+				float: left;
+				width: 20px;
+				height: 20px;
+				background: #fff;
+				border: 1px solid #ccc;
+				margin-left: 10px;
+				cursor: pointer;
+			}
+
+			.all ol li.current {
+				background: #DB192A;
+			}
+
+			#arr {
+				display: none;
+			}
+
+			#arr span {
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				left: 5px;
+				top: 50%;
+				margin-top: -20px;
+				background: #000;
+				cursor: pointer;
+				line-height: 40px;
+				text-align: center;
+				font-weight: bold;
+				font-family: '黑体';
+				font-size: 30px;
+				color: #fff;
+				opacity: 0.3;
+				border: 1px solid #fff;
+			}
+
+			#arr #right {
+				right: 5px;
+				left: auto;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="all" id='box'>
+			<div class="screen">
+				<!--相框-->
+				<ul>
+					<li><img src="images/1.jpg" /></li>
+					<li><img src="images/2.jpg" /></li>
+					<li><img src="images/3.jpg" /></li>
+					<li><img src="images/4.jpg" /></li>
+					<li><img src="images/5.jpg" /></li>
+				</ul>
+				<ol>
+				</ol>
+			</div>
+			<div id="arr">
+				<span id="left">&lt;</span>
+				<span id="right">&gt;</span>
+			</div>
+		</div>
+
+
+		<script src="js/animate.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var box = document.getElementById('box');
+			var screen = document.getElementsByClassName('screen')[0];
+			var ulObj = screen.firstElementChild || screen.firstChild;
+			var lis = ulObj.children;
+			var imgWidth = screen.offsetWidth;
+			var olObj = screen.lastElementChild || screen.lastChild;
+			var arr = document.getElementById('arr');
+			var left = document.getElementById('left');
+			var right = document.getElementById('right');
+
+			var picIndex = 0;
+			// 1. 动态创建页数指示器
+			for (var i = 0; i < lis.length; i++) {
+				var liObj = document.createElement('li');
+				liObj.innerText = i + 1;
+				// 设置自定义索引值用于
+				liObj.setAttribute('index', i);
+				olObj.appendChild(liObj);
+
+				// 2. 鼠标经过指示器翻页功能
+				liObj.onmouseover = function() {
+					// 2.1 先全部清除背景样式
+					for (var j = 0; j < olObj.children.length; j++) {
+						olObj.children[j].removeAttribute('class');
+					}
+					// 2.2 再重新设置背景色
+					this.className = 'current';
+					// 2.3 移动到指定位置
+					picIndex = this.getAttribute('index');
+					animate(ulObj, -picIndex * imgWidth);
+				}
+			}
+
+
+			// 3. 设置ol的第一个元素默认有背景色
+			var firstLi = olObj.firstElementChild || olObj.firstChild;
+			firstLi.className = 'current';
+
+			// 克隆第一张图片添加到最后
+			ulObj.appendChild(ulObj.children[0].cloneNode(true));
+
+			var timeId = setInterval(clickHandle, 2000);
+			// 鼠标进入显示左右按钮
+			box.onmouseover = function() {
+				arr.style.display = 'block';
+				clearInterval(timeId);
+			};
+			box.onmouseout = function() {
+				arr.style.display = 'none';
+				timeId = setInterval(clickHandle, 2000);
+			};
+
+			function clickHandle() {
+				//如果pic的值是5,恰巧是ul中li的个数-1的值,此时页面显示第六个图片,而用户会认为这是第一个图,
+				//所以,如果用户再次点击按钮,用户应该看到第二个图片
+				if (picIndex == lis.length - 1) {
+					picIndex = 0;
+					ulObj.style.left = 0 + 'px';
+				}
+				picIndex++;
+				animate(ulObj, -picIndex * imgWidth);
+			
+				// 设置页数指示器背景颜色
+				if (picIndex == lis.length - 1) {	//如果pic==5说明,此时显示第6个图(内容是第一张图片),第一个小按钮有颜色
+					olObj.children[olObj.children.length - 1].className = '';
+					olObj.children[0].className = 'current';
+				} else {
+					for (var i = 0; i < olObj.children.length; i++) {
+						olObj.children[i].className = '';
+					}
+					olObj.children[picIndex].className = 'current';
+				}
+			};
+			// 左右按钮点击切换图片
+			right.onclick = clickHandle();
+			left.onclick = function() {
+				if (picIndex == 0) {
+					picIndex = lis.length - 1;
+					ulObj.style.left = -picIndex * imgWidth + 'px';
+				}
+				picIndex--;
+				animate(ulObj, -picIndex * imgWidth);
+				
+				// 设置指示器背景颜色
+				for (var i = 0; i < olObj.children.length; i++) {
+					olObj.children[i].className = '';
+				}
+				olObj.children[picIndex].className = 'current';
+			};
+		</script>
+	</body>
+</html>

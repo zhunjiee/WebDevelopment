@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			ul {
+				list-style: none;
+
+			}
+
+			img {
+				vertical-align: top;
+			}
+
+			/*取消图片底部3像素距离*/
+			.box {
+				width: 730px;
+				height: 454px;
+				margin: 100px auto;
+				background-color: pink;
+				border: 1px solid red;
+				position: relative;
+				overflow: hidden;
+			}
+
+			.box ul li {
+				float: left;
+			}
+
+			.box ul {
+				width: 3650px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box" id="imgView">
+			<ul>
+				<li><img src="images/1.jpg" alt="" /></li>
+				<li><img src="images/2.jpg" alt="" /></li>
+				<li><img src="images/3.jpg" alt="" /></li>
+				<li><img src="images/4.jpg" alt="" /></li>
+				<li><img src="images/1.jpg" alt="" /></li>
+			</ul>
+		</div>
+
+
+		<script src="js/animate.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var imgView = document.getElementById('imgView');
+			var ul = imgView.children[0];
+			imgList = ul.children;
+			imgWidth = imgView.offsetWidth;
+
+			var current = 0;
+			function run() {
+				current -= 10;
+				if (current >= -imgWidth * (imgList.length-1)) {
+					ul.style.left = current + 'px';
+				} else {
+					ul.style.left = 0 + 'px';
+					current = 0;
+				}
+			}
+			var timeId = setInterval(run, 20);
+			
+			imgView.onmouseover = function() {
+				clearInterval(timeId);
+			};
+			imgView.onmouseout = function() {
+				timeId = setInterval(run, 20);
+			}
+		</script>
+	</body>
+</html>

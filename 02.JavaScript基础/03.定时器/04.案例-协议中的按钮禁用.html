@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<textarea name="texta" id="" cols="30" rows="10">
+				这个世界就是这么疯狂,你不同意,我就让你注册,秦始皇,打钱
+			</textarea>
+		</div>
+		
+		<button type="button" id="btn" disabled="disabled">请仔细阅读协议(5)</button>
+		
+		<script type="text/javascript">
+			var btn = document.getElementById('btn');
+			var time = 5;
+			var timeId = setInterval(function() {
+				time--;
+				btn.innerText = '请仔细阅读协议('+ time +')';
+				if(time <= 0) {
+					clearInterval(timeId);
+					btn.disabled = false;
+					btn.innerText = '同意';
+				}
+			}, 1000);
+		</script>
+	</body>
+</html>

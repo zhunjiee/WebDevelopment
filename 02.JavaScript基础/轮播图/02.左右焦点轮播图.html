@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>左右焦点轮播图</title>
+		<style>
+			body,
+			ul,
+			ol,
+			li,
+			img {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+
+			#box {
+				width: 520px;
+				height: 280px;
+				padding: 5px;
+				position: relative;
+				border: 1px solid #ccc;
+				margin: 100px auto 0;
+			}
+
+			.ad {
+				width: 520px;
+				height: 280px;
+				overflow: hidden;
+				position: relative;
+			}
+
+			#box img {
+				width: 520px;
+			}
+
+			.ad ol {
+				position: absolute;
+				right: 10px;
+				bottom: 10px;
+			}
+
+			.ad ol li {
+				width: 20px;
+				height: 20px;
+				line-height: 20px;
+				border: 1px solid #ccc;
+				text-align: center;
+				background: #fff;
+				float: left;
+				margin-right: 10px;
+				cursor: pointer;
+				_display: inline;
+			}
+
+			.ad ol li.current {
+				background: yellow;
+			}
+
+			.ad ul li {
+				float: left;
+			}
+
+			.ad ul {
+				position: absolute;
+				top: 0;
+				width: 2940px;
+			}
+
+			.ad ul li.current {
+				display: block;
+			}
+
+			#focusD {
+				display: none;
+			}
+
+			#focusD span {
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				left: 5px;
+				top: 50%;
+				margin-top: -20px;
+				background: #000000;
+				cursor: pointer;
+				line-height: 40px;
+				text-align: center;
+				font-weight: bold;
+				font-family: '黑体', sans-serif;
+				font-size: 30px;
+				color: #fff;
+				opacity: 0.3;
+				border: 1px solid #fff;
+			}
+
+			#focusD #right {
+				right: 5px;
+				left: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" class="all">
+			<div class="ad">
+				<ul id="imgs">
+					<li><img src="images/11.jpg" /></li>
+					<li><img src="images/12.jpg" /></li>
+					<li><img src="images/13.jpg" /></li>
+					<li><img src="images/14.jpg" /></li>
+					<li><img src="images/15.jpg" /></li>
+				</ul>
+			</div>
+			<!--相框-->
+			<div id="focusD">
+				<span id="left">&lt;</span>
+				<span id="right">&gt;</span>
+			</div>
+		</div>
+
+		<script src="js/animate.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var box = document.getElementById('box');
+			var ad = box.children[0];
+			var imgWidth = ad.offsetWidth;
+			var focusD = document.getElementById('focusD');
+			var imgs = document.getElementById('imgs');
+			var left = document.getElementById('left');
+			var right = document.getElementById('right');
+			
+			box.onmouseover = function() {
+				focusD.style.display = 'block';
+			}
+			box.onmouseout = function() {
+				focusD.style.display = 'none';
+			}
+			
+			var index = 0;
+			left.onclick = function() {
+				if (index > 0) {
+					index--;
+					animate(imgs, -index * imgWidth);
+				}
+			}
+			right.onclick = function() {
+				if (index < imgs.children.length - 1) {
+					index++;
+					animate(imgs, -index * imgWidth);
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			div {
+				width: 300px;
+				height: 200px;
+				border: 10px solid red;
+				padding: 10px;
+				overflow: auto;
+			}
+
+			input {
+				left: 330px;
+				position: absolute;
+				top: 20px;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div id="dv">
+			我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人我喜欢男人嘿嘿,小苏说
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+		var dv = document.getElementById('dv');
+		console.log('offsetHeight = ' + dv.offsetHeight);	// border + padding + height = 10 + 10 + 10 + 10 + 200 = 240
+		console.log('offsetWidth = ' + dv.offsetWidth);
+		
+		
+		console.log('clientHeight = ' + dv.clientHeight);	// padding + height = 10 + 10 + 200 = 220
+		console.log('clientWidth = ' + dv.clientWidth);
+		
+		
+		console.log('scrollHeight = ' + dv.scrollHeight);	// 对象的实际高度,不包括border
+		console.log('scrollWidth = ' + dv.scrollWidth);
+		
+	</script>
+</html>

@@ -156,7 +156,8 @@
 
 			// 克隆第一张图片添加到最后
 			ulObj.appendChild(ulObj.children[0].cloneNode(true));
-
+			
+			// 间隔2秒自动翻页
 			var timeId = setInterval(clickHandle, 2000);
 			// 鼠标进入显示左右按钮
 			box.onmouseover = function() {

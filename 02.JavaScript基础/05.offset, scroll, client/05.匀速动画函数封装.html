@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			* {
+      margin: 0;
+      padding: 0;
+    }
+
+    div {
+      margin-top: 20px;
+      width: 200px;
+      height: 100px;
+      background-color: green;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  </style>
+	</head>
+	<body>
+		<input type="button" value="移动到400px" id="btn1" />
+		<input type="button" value="移动到800px" id="btn2" />
+		<div id="dv"></div>
+	</body>
+
+
+	<script type="text/javascript">
+		var dv = document.getElementById('dv');
+		var btn1 = document.getElementById('btn1');
+		var btn2 = document.getElementById('btn2');
+		btn1.onclick = function() {
+			animate(dv, 400);
+		};
+		btn2.onclick = function() {
+			animate(dv, 800);
+		};
+
+
+
+
+		function animate(element, target) {
+			clearInterval(element.timeId);
+			element.timeId = setInterval(function() {
+				var step = 10;
+				var current = element.offsetLeft;
+				step = target - current > 0 ? step : -step;
+				if (Math.abs(target - current) > Math.abs(step)) {
+					current += step;
+					element.style.left = current + 'px';
+				} else {
+					element.style.left = target = 'px';
+					clearInterval(element.timeId);
+				}
+			}, 20);
+		}
+	</script>
+</html>

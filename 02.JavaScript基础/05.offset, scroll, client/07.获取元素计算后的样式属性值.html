@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+			  width: 200px;
+			  height: 100px;
+			  background-color: purple;
+			  left:100px;
+			  top:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="显示效果" id="btn" />
+		<div id="dv"></div>
+	</body>
+	
+	
+	<script>
+		function getStyle(element, attr) {
+			// 判断浏览器是否支持这个方法
+			// getComputedStyle : 主流浏览器支持
+			// currentStyle : IE支持
+			return window.getComputedStyle ? window.getComputedStyle(element, null)[attr] : element.currentStyle[attr];
+		}
+		
+		
+		var dv = document.getElementById('dv');
+		document.getElementById('btn').onclick = function() {
+			console.log(window.getComputedStyle(dv, null).left);
+			console.log(getComputedStyle(dv, null)['top']);
+		}
+	</script>
+</html>

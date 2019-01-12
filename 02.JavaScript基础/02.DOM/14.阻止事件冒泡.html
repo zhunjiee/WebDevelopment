@@ -45,13 +45,14 @@
 			document.getElementById('dv3').onclick = function(e) {
 				console.log(this.id);
 				// 尝试添加以下方法结果会有什么不同？
-				// stopBubble(e);
+				stopBubble(e);
 			};
 			
 			
 			
 			// 阻止事件冒泡
 			function stopBubble(event) {
+				var event = event || window.event;
 				if(event.stopPropagation) {
 					event.stopPropagation();
 				} else {

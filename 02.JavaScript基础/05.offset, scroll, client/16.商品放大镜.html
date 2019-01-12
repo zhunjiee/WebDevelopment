@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品放大镜</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 350px;
+            height: 350px;
+            margin: 100px;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+
+        .big {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 0;
+            left: 360px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            display: none;
+        }
+
+        .mask {
+            width: 175px;
+            height: 175px;
+            background: rgba(255, 255, 0, 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: move;
+            display: none;
+        }
+
+        .small {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="box">
+    <div class="small"><!--小层-->
+        <img src="images/small.png" width="350" alt=""/>
+        <div class="mask"></div><!--遮挡层-->
+    </div><!--小图-->
+    <div class="big"><!--大层-->
+        <img src="images/big.jpg" width="800" alt=""/><!--大图-->
+    </div><!--大图-->
+</div>
+
+<script>
+    var box = document.getElementById('box');
+    var small = box.children[0];
+    var mask = small.lastElementChild || small.lastChild;
+    var big = box.children[1];
+    var bigImg = big.children[0];
+
+    box.onmouseover = function () {
+        mask.style.display = 'block';
+        big.style.display = 'block';
+    };
+    box.onmouseout = function () {
+        mask.style.display = 'none';
+        big.style.display = 'none';
+    };
+
+    // 鼠标在小图上移动，mask跟随鼠标移动
+    small.onmousemove = function (e) {
+        // 1.计算mask距离small的左侧的这段距离
+        var x = e.clientX - box.offsetLeft;
+        var y = e.clientY - box.offsetTop;
+
+        // 2.使鼠标指针在mask中间
+        x = x - mask.offsetWidth / 2;
+        y = y - mask.offsetHeight / 2;
+
+        // 3.计算mask能移动的范围
+        // 最小值
+        x = x < 0 ? 0 : x;
+        y = y < 0 ? 0 : y;
+        // 最大值
+        x = x > small.offsetWidth - mask.offsetWidth ? small.offsetWidth - mask.offsetWidth : x;
+        y = y > small.offsetHeight - mask.offsetHeight ? small.offsetHeight - mask.offsetHeight : y;
+
+        // 4.设置mask的left和top
+        mask.style.left = x + 'px';
+        mask.style.top = y + 'px';
+
+
+        /*--------------------设置大图的移动距离----------------------*/
+
+        // mask的横向最大值(small.offsetWidth - mask.offsetWidth) / bigImg的横向最大值maxX = mask的移动距离x / bigImg的移动距离bigImgMoveX
+        // 1.bigImg的横向最大值
+        var maxX = bigImg.offsetWidth - big.offsetWidth;
+        var maxY = bigImg.offsetHeight - big.offsetHeight;
+
+        // 2.计算大图需要移动的距离
+        var bigImgMoveX = x * maxX / (small.offsetWidth - mask.offsetWidth);
+        var bigImgMoveY = y * maxY / (small.offsetHeight - mask.offsetHeight);
+
+        // 3.计算大图的移动距离
+        bigImg.style.marginLeft = -bigImgMoveX + 'px';
+        bigImg.style.marginTop = -bigImgMoveY + 'px';
+    };
+</script>
+</body>
+</html>

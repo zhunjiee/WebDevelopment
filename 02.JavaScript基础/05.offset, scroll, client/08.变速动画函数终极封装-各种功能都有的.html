@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			div {
+				width: 200px;
+				height: 100px;
+				background-color: green;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			input {
+				z-index: 10;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="移动到400px" id="btn1" />
+		<div id="dv"></div>
+	</body>
+
+	<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var dv = document.getElementById('dv');
+		document.getElementById('btn1').onclick = function() {
+			var json1 = {
+				'zIndex': 998,
+				'width': 400,
+				'height': 500,
+				'left': 300,
+				'top': 100,
+				'opacity': 0.5
+			};
+			animate(dv, json1, function() {
+				animate(dv, {
+					'width': 100,
+					'height': 200,
+					'left': 30,
+					'top': 20,
+					'opacity': 0.8
+				});
+			});
+		};
+
+
+
+		// 获取任意一个元素的任意一个属性的当前值
+		function getStyle(element, attr) {
+			return window.getComputedStyle ? window.getComputedStyle(element, null)[attr] : element.currentStyle[attr] || 0;
+		}
+
+
+		// 动画函数
+		function animate(element, styleJSON, fn) {
+			clearInterval(element.timeId);
+
+			element.timeId = setInterval(function() {
+				// 判断是否到达目标
+				var flag = true;
+				for (var attr in styleJSON) {
+					if (attr === 'opacity') { // 设置透明度
+						var current = getStyle(element, attr) * 100;
+						var target = styleJSON[attr] * 100;
+						var step = (target - current) / 10;
+						step = step > 0 ? Math.ceil(step) : Math.floor(step);
+						current += step;
+						element.style[attr] = current / 100;
+					} else if (attr === 'zIndex') { // 设置层级
+						element.style[attr] = styleJSON[attr];
+					} else { // 设置位置
+						var current = parseInt(getStyle(element, attr));
+						var target = styleJSON[attr];
+						var step = (target - current) / 10;
+						step = step > 0 ? Math.ceil(step) : Math.floor(step);
+						current += step;
+						element.style[attr] = current + 'px';
+					}
+
+					// 循环完成flag变成true,再进行下面的操作
+					if (current != target) {
+						flag = false;
+					}
+				}
+				// 循环完成了,flag=true,清除定时器,执行回调函数
+				if (flag) {
+					clearInterval(element.timeId);
+					if (fn) {
+						fn();
+					}
+				}
+
+				// console.log('目标：' + target + ',当前：' + current + ',每次移动步数：' + step);
+			}, 20);
+		}
+	</script>
+</html>

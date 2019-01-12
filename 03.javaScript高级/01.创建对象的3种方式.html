@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建对象的几种方式</title>
+</head>
+<body>
+
+<script>
+    // 1. new Object方式
+    var obj1 = new Object();
+    obj1.name = '小明';
+    obj1.age = 18;
+    obj1.sayHello = function () {
+        alert('hello!');
+    };
+    
+    // 2.字面量方式
+    var empty = {};
+    var point = {
+        x : 0,
+        y : 0
+    };
+    var point2 = {
+        x : point.x,
+        y : point.y + 1
+    };
+    var person = {
+        firstName : 'John',
+        lastName : 'Doe',
+        age : 50,
+        eyeColor : 'blue'
+    };
+    
+    
+    // 3. 自定义构造函数
+    function Person(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age
+    }
+    Person.prototype.salary = null;
+    Person.prototype = {
+        constructor : Person,
+        work : function () {
+            console.log('老子在拼命工作！');
+        }
+    };
+    var xiaoMing = new Person('小明', '尼古拉斯', 18);
+    xiaoMing.salary = 200;
+    xiaoMing.work();
+
+    // 4. 工厂模式
+    function Animal(name, age, language) {
+        var animal = new Object();
+        animal.name = name;
+        animal.age = age;
+        animal.say = function () {
+            console.log(language);
+        };
+        return animal;
+    }
+
+</script>
+</body>
+</html>

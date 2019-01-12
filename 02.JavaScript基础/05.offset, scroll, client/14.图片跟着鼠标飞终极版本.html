@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 2000px;
+        }
+
+        #angel {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<img src="../images/tianshi.gif" alt="天使" id="angel">
+
+
+<script>
+    var mEvent = {
+        getEvent : function (evt) {
+            return evt || window.event;
+        },
+        getClientX : function (evt) {
+            return this.getEvent(evt).clientX;
+        },
+        getClientY : function (evt) {
+            return this.getEvent(evt).clientY;
+        },
+        getScrollLeft : function () {
+            return window.pageXOffset || document.body.scrollLeft || document.documentElement.scrollLeft || 0;
+        },
+        getScrollTop : function () {
+            return window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop || 0;
+        },
+        getPageX : function (evt) {
+            return this.getEvent(evt).pageX ? this.getEvent(evt).pageX : this.getClientX(evt) + this.getScrollLeft();
+        },
+        getPageY : function (evt) {
+            return this.getEvent(evt).pageY ? this.getEvent(evt).pageY : this.getClientY(evt) + this.getScrollTop();
+        }
+    };
+
+    var angel = document.getElementById('angel');
+    document.onmousemove = function (e) {
+        // pageX 或者 clientX + scrollLeft (IE)
+        angel.style.left = mEvent.getPageX(e) + 'px';
+        angel.style.top = mEvent.getPageY(e) + 'px';
+    }
+</script>
+</body>
+</html>

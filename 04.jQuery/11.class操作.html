@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class操作</title>
+    <style>
+        li.basic {
+            background-color: pink;
+            font-size: 32px;
+            color: red;
+        }
+        .bigger {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="添加basic类" >
+<input type="button" value="添加bigger类">
+<input type="button" value="移除bigger类">
+<input type="button" value="判断bigger类">
+<input type="button" value="切换类">
+<ul>
+    <li class="aa bb cc dd">1</li>
+    <li class="aa bb cc dd">2</li>
+    <li class="aa bb cc dd">3</li>
+    <li class="aa bb cc dd">4</li>
+</ul>
+
+
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+       $(':button').eq(0).click(function () {
+           $('ul>li').addClass('basic');
+       });
+       $(':button').eq(1).click(function () {
+           $('ul>li').addClass('bigger');
+       });
+        $(':button').eq(2).click(function () {
+            $('ul>li').removeClass('bigger');
+        });
+        $(':button').eq(3).click(function () {
+            alert($('ul>li').hasClass('bigger'));
+        });
+        $(':button').eq(4).click(function () {
+            $('ul>li').toggleClass('basic');
+        });
+    });
+</script>
+</body>
+</html>

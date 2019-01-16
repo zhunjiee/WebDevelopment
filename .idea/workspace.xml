@@ -2,65 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee5d4ba2-6bce-4a5c-b1cf-57e85e14bef5" name="Default Changelist" comment="webstorm git test">
-      <change afterPath="$PROJECT_DIR$/.idea/WebDevelopment.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01.HTML和CSS/09.table表格.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01.HTML和CSS/10.table单元格合并.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/01.ECMAScript/04.阻止超链接跳转.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/08.变速动画函数终极封装-各种功能都有的.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/09.固定导航栏.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/10.筋斗云效果.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/11.手风琴效果.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/12.360开机时间关闭动画.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/13.旋转木马效果.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/14.图片跟着鼠标飞终极版本.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/15.可拖拽的对话框.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/16.商品放大镜.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/17.div的滚动条.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/18.js实现滚动条.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/19.表格隔行变色.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/20.Tab切换效果.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/images/big.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/images/next.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/images/prev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/images/slidepic1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/images/slidepic2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/images/slidepic3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/images/slidepic4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/images/slidepic5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/images/slidepic6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/images/slidepic7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/images/slidepic8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/images/slidepic9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/images/small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/images/b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/images/t.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.JavaScript基础/js/animate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03.javaScript高级/01.创建对象的3种方式.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/02.DOM/14.阻止事件冒泡.html" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavaScript基础/02.DOM/14.阻止事件冒泡.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/111.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/222.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/333.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/lb1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/lb2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/lb3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/lb4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/lb5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/libai.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/nav.png" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavaScript基础/images/nav.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/卡卡西.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/大蛇丸.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/images/百度换肤.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.JavaScript基础/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/02.JavaScript基础/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01.HTML和CSS/01.test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01.HTML和CSS/CSS/01.float.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03.javaScript高级/02.call(),apply().bind().html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/01.jQuery入口函数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/02.隔行变色.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/03.基本选择器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/04.过滤选择器（隔行变色）.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/05.筛选选择器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/06.下拉菜单.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/07.突出展示案例.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/08.手风琴案例.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/09.淘宝精品案例.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/10.京东呼吸灯效果轮播图/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/10.京东呼吸灯效果轮播图/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/10.京东呼吸灯效果轮播图/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/10.京东呼吸灯效果轮播图/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/10.京东呼吸灯效果轮播图/images/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/10.京东呼吸灯效果轮播图/images/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/10.京东呼吸灯效果轮播图/images/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/10.京东呼吸灯效果轮播图/images/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/10.京东呼吸灯效果轮播图/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/11.class操作.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/12.属性操作.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/13.tab栏切换.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/abg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/guojidapai.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/guozhuangmingpin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/libg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/lili.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/nanshijingpin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/qingjieyongpin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/冬裙.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/呢大衣.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/围巾.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/女包.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/女裤.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/女靴.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/棉服.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/毛衣.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/牛仔裤.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/男包.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/男棉服.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/男毛衣.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/男靴.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/登山鞋.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/皮带.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/皮衣.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/羽绒服.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/雪地靴.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/js/jquery-1.12.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01.HTML和CSS/CSS/transition和transform/03.transform-2D转换.html" beforeDir="false" afterPath="$PROJECT_DIR$/01.HTML和CSS/CSS/transition和transform/03.transform-2D转换.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -72,7 +73,57 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04.jQuery/09.淘宝精品案例.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="702">
+              <caret line="117" column="11" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04.jQuery/10.京东呼吸灯效果轮播图/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+              <folding>
+                <element signature="e#744#748#1" expanded="true" />
+                <element signature="e#790#794#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04.jQuery/11.class操作.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04.jQuery/12.属性操作.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/04.jQuery/13.tab栏切换.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="99" column="72" selection-start-line="99" selection-start-column="72" selection-end-line="99" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -109,6 +160,24 @@
         <option value="$PROJECT_DIR$/03.javaScript高级/01.创建对象的3种方式.html" />
         <option value="$PROJECT_DIR$/01.HTML和CSS/09.table表格.html" />
         <option value="$PROJECT_DIR$/01.HTML和CSS/10.table单元格合并.html" />
+        <option value="$PROJECT_DIR$/01.HTML和CSS/CSS/01.float.html" />
+        <option value="$PROJECT_DIR$/01.HTML和CSS/CSS/transition和transform/03.transform-2D转换.html" />
+        <option value="$PROJECT_DIR$/01.HTML和CSS/01.test.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/01.jQuery入口函数.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/02.隔行变色.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/03.基本选择器.html" />
+        <option value="$PROJECT_DIR$/03.javaScript高级/02.call(),apply().bind().html" />
+        <option value="$PROJECT_DIR$/04.jQuery/04.过滤选择器.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/04.过滤选择器（隔行变色）.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/05.筛选选择器.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/06.下拉菜单.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/07.突出展示案例.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/08.手风琴案例.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/09.淘宝精品案例.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/10.京东呼吸灯效果轮播图/index.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/11.class操作.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/12.属性操作.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/13.tab栏切换.html" />
       </list>
     </option>
   </component>
@@ -118,10 +187,10 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="850" />
-    <option name="y" value="8" />
-    <option name="width" value="1055" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="506" />
+    <option name="y" value="37" />
+    <option name="width" value="1370" />
     <option name="height" value="1015" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -143,7 +212,18 @@
             <path>
               <item name="WebDevelopment" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebDevelopment" type="462c0819:PsiDirectoryNode" />
-              <item name="01.HTML和CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="03.javaScript高级" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebDevelopment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDevelopment" type="462c0819:PsiDirectoryNode" />
+              <item name="04.jQuery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebDevelopment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDevelopment" type="462c0819:PsiDirectoryNode" />
+              <item name="04.jQuery" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -156,15 +236,18 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Git/bin/git.exe" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\02.JavaScript基础\05.offset, scroll, client\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\04.jQuery\images" />
+      <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\04.jQuery\10.京东呼吸灯效果轮播图\images" />
+      <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\04.jQuery\js" />
       <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\02.JavaScript基础\images" />
       <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\02.JavaScript基础\05.offset, scroll, client" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\02.JavaScript基础\05.offset, scroll, client\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -197,17 +280,39 @@
       <workItem from="1547172348431" duration="2257000" />
       <workItem from="1547176895741" duration="2125000" />
       <workItem from="1547179079311" duration="26722000" />
-      <workItem from="1547277518797" duration="5648000" />
+      <workItem from="1547277518797" duration="13906000" />
+      <workItem from="1547459334373" duration="5504000" />
+      <workItem from="1547545271000" duration="5459000" />
+      <workItem from="1547559290986" duration="1807000" />
+      <workItem from="1547630231622" duration="6395000" />
     </task>
+    <task id="LOCAL-00001" summary="webstorm git test">
+      <created>1547287799939</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547287799940</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39386000" />
+    <option name="totallyTimeSpent" value="66809000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="405" y="30" width="1096" height="812" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.32054454" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25566038" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -216,12 +321,12 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3297546" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3045326" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006605" side_tool="true" weight="0.3045326" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4993395" weight="0.3045326" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -229,6 +334,46 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="webstorm git test" />
@@ -367,13 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03.javaScript高级/01.创建对象的3种方式.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01.HTML和CSS/09.table表格.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -381,10 +519,162 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/03.javaScript高级/01.创建对象的3种方式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01.HTML和CSS/CSS/01.float.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01.HTML和CSS/CSS/transition和transform/03.transform-2D转换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-230">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/01.HTML和CSS/10.table单元格合并.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
+        <state relative-caret-position="46">
           <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/js/jquery-1.12.4.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01.HTML和CSS/01.test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/01.jQuery入口函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03.javaScript高级/02.call(),apply().bind().html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/03.基本选择器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/02.隔行变色.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/04.过滤选择器（隔行变色）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/05.筛选选择器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/06.下拉菜单.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="90" column="10" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/07.突出展示案例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/08.手风琴案例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="60" column="56" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-265">
+          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/images/牛仔裤.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/images/毛衣.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/images/男包.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/09.淘宝精品案例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="117" column="11" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/10.京东呼吸灯效果轮播图/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+          <folding>
+            <element signature="e#744#748#1" expanded="true" />
+            <element signature="e#790#794#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/11.class操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/images/01.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/12.属性操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/13.tab栏切换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="99" column="72" selection-start-line="99" selection-start-column="72" selection-end-line="99" selection-end-column="72" />
         </state>
       </provider>
     </entry>

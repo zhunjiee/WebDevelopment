@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+</ul>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+       $('li:even').css('backgroundColor', 'red');
+       $('li:odd').css('backgroundColor', 'green');
+       $('li:eq(1)').css('fontSize', '30px');
+       $('li:last').css('color', 'white');
+    });
+</script>
+</body>
+</html>

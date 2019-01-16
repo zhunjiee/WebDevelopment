@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var a = {
+        name: '张三',
+        fn : function (num1, num2, num3) {
+            console.log(this.name);
+            console.log(num1 + num2 + num3);
+        }
+    };
+    var b = a.fn;
+    b(1, 2, 3);
+
+    b.call(a, 1, 2, 3);
+
+    b.apply(a, [1, 2, 3]);
+
+    var c = b.bind(a, 1, 2, 3);
+    c();
+</script>
+</body>
+</html>

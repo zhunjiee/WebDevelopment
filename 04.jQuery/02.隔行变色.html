@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>隔行变色</title>
+</head>
+<body>
+<ul>
+    <li>第1个li</li>
+    <li>第2个li</li>
+    <li>第3个li</li>
+    <li>第4个li</li>
+    <li>第5个li</li>
+    <li>第6个li</li>
+    <li>第7个li</li>
+    <li>第8个li</li>
+</ul>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    var lis = $('li');
+    // lis是jQuery对象，必须使用jQuery方法
+    lis.css('background-color', 'green');
+    for (var i = 0; i < lis.length; i++) {
+        if (i % 2 === 0) {
+            // lis[i] 变成DOM对象了，因为通过下标取出来了
+            lis[i].style.backgroundColor = 'red';
+        }
+    }
+</script>
+</body>
+</html>

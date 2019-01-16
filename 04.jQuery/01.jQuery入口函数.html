@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery入口函数</title>
+    <style>
+
+    </style>
+
+</head>
+<body>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    // js入口函数
+    window.onload = function () {
+        console.log('这是js入口函数');
+    };
+
+    // jQuery第一种
+    $(document).ready(function () {
+        // 太长，不建议使用
+        console.log('这是jQuery的第一种入口函数');
+    });
+
+    // jQuery第二种
+    $(function () {
+        console.log('这是jQuery的好用的入口函数');
+    });
+</script>
+</body>
+</html>

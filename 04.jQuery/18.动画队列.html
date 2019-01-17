@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画队列</title>
+    <style>
+        #dv {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="按钮" id="btn">
+<div id="dv"></div>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        $('#dv').animate({left: 300})
+            .animate({top: 300})
+            .animate({width: 300, height: 300})
+            .animate({top: 30})
+            .animate({left: 30})
+            .animate({width: 100, height: 100});
+    });
+</script>
+</body>
+</html>

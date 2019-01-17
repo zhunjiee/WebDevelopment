@@ -84,10 +84,10 @@
     $(function () {
        var lis = $('.wrap>ul>li');
        lis.mouseenter(function () {
-           $(this).children('ul').show(100);
+           $(this).children('ul').stop().slideDown();
        });
        lis.mouseleave(function () {
-           $(this).children('ul').hide(100);
+           $(this).children('ul').stop().slideUp();
        });
     });
 </script>

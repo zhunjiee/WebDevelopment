@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    我是内容
+</div>
+
+<p>我是外面的p元素</p>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+       // 创建jq对象
+       var $a = $('<a href="http://www.baidu.com" target="_blank">百度一下</a>');
+       console.log($a);
+
+       // $('#box').append($('p'));
+
+       // $a.appendTo($('#box'));
+
+        // $('#box').after($a);
+
+        // $a.insertAfter($('#box'));
+
+        // $('#box').before($a);
+    });
+</script>
+</body>
+</html>

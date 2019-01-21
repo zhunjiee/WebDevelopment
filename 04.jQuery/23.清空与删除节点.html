@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>1111</p>
+    <p>2222</p>
+</div>
+
+<p class='des'>我是外面的p元素</p>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        // 只清除元素,不清除事件,导致内存泄漏,不建议使用
+        // $('div').html('');
+
+        // 清空子元素.自己还活着的
+        // $('div').empty();
+
+        // 把自己和子元素都清除了
+        // $('div').remove();
+
+        $('.des').click(function () {
+            alert('hahahaha');
+        });
+
+        // clone - 参数为true会把事件一同复制
+        $('.des').clone(true).appendTo($('.des'));
+    });
+</script>
+</body>
+</html>

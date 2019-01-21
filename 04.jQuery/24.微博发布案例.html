@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .box {
+            width: 600px;
+            margin: 100px auto;
+            border: 1px solid #000;
+            padding: 20px;
+        }
+
+        textarea {
+            width: 450px;
+            height: 160px;
+            outline: none;
+            resize: none;
+        }
+
+        ul {
+            width: 450px;
+            padding-left: 80px;
+        }
+
+        ul li {
+            line-height: 25px;
+            border-bottom: 1px dashed #cccccc;
+        }
+
+        input {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="weibo">
+    <label for="txt">微博发布</label><textarea name="" id="txt" cols="30" rows="10"></textarea>
+    <button id="btn">发布</button>
+    <ul id="ul">
+    </ul>
+</div>
+
+
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        $('#btn').click(function () {
+            var txt = $('#txt').val();
+            if (txt.trim().length !== 0) {
+                $('<li></li>').text(txt).prependTo($('#ul'));
+                $('#txt').val('');
+            }
+        });
+    });
+</script>
+</body>
+</html>

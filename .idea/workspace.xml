@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee5d4ba2-6bce-4a5c-b1cf-57e85e14bef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/04.jQuery/22.城市选择案例.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.jQuery/23.清空与删除节点.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.jQuery/23.音乐导航/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.jQuery/23.音乐导航/mp3/1.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.jQuery/23.音乐导航/mp3/2.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.jQuery/23.音乐导航/mp3/3.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.jQuery/23.音乐导航/mp3/4.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.jQuery/23.音乐导航/mp3/5.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.jQuery/23.音乐导航/mp3/6.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.jQuery/23.音乐导航/mp3/7.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.jQuery/23.音乐导航/mp3/8.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.jQuery/23.音乐导航/mp3/9.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.jQuery/24.微博发布案例.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.jQuery/25.弹幕效果.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/27.小火箭返回顶部案例.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/gotop.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.jQuery/images/gotop.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -30,54 +19,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/04.jQuery/23.音乐导航/index.html">
+        <entry file="file://$PROJECT_DIR$/04.jQuery/26.固定导航栏.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="118" column="26" lean-forward="true" selection-start-line="118" selection-start-column="12" selection-end-line="118" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/04.jQuery/22.城市选择案例.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="53" column="50" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="50" />
-              <folding>
-                <element signature="e#412#416#0" expanded="true" />
-                <element signature="e#416#420#0" expanded="true" />
-                <element signature="e#454#458#0" expanded="true" />
-                <element signature="e#458#462#0" expanded="true" />
-                <element signature="e#496#500#0" expanded="true" />
-                <element signature="e#533#537#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/04.jQuery/23.清空与删除节点.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/04.jQuery/24.微博发布案例.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="58" column="24" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="24" />
+            <state relative-caret-position="-8">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/04.jQuery/25.弹幕效果.html">
+        <entry file="file://$PROJECT_DIR$/04.jQuery/27.小火箭返回顶部案例.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="102" column="38" lean-forward="true" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
+            <state relative-caret-position="357">
+              <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/09.固定导航栏.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -99,9 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/10.筋斗云效果.html" />
-        <option value="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/11.手风琴效果.html" />
-        <option value="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/12.360开机书记兼关闭动画.html" />
         <option value="$PROJECT_DIR$/02.JavaScript基础/js/animate.js" />
         <option value="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/12.360开机时间关闭动画.html" />
         <option value="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/13.旋转木马效果.html" />
@@ -150,6 +110,9 @@
         <option value="$PROJECT_DIR$/04.jQuery/23.清空与删除节点.html" />
         <option value="$PROJECT_DIR$/04.jQuery/24.微博发布案例.html" />
         <option value="$PROJECT_DIR$/04.jQuery/25.弹幕效果.html" />
+        <option value="$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/09.固定导航栏.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/26.固定导航栏.html" />
+        <option value="$PROJECT_DIR$/04.jQuery/27.小火箭返回顶部案例.html" />
       </list>
     </option>
   </component>
@@ -159,10 +122,10 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="647" />
-    <option name="y" value="22" />
-    <option name="width" value="1232" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="381" />
+    <option name="y" value="25" />
+    <option name="width" value="1235" />
     <option name="height" value="990" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -196,20 +159,21 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files (x86)/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/Atlassian/SourceTree/git_local/bin/git.exe" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\04.jQuery\22.手风琴效果" />
-      <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\02.JavaScript基础\05.offset, scroll, client\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SourceTree\WebDevelopment\02.JavaScript基础\05.offset, scroll, client\images" />
       <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\04.jQuery\23.音乐导航" />
       <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\04.jQuery\22.手风琴效果\images" />
       <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\04.jQuery\images" />
       <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\04.jQuery\10.京东呼吸灯效果轮播图\images" />
-      <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\04.jQuery\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\SourceTree\WebDevelopment\04.jQuery\images" />
+      <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\04.jQuery\22.手风琴效果" />
+      <recent name="C:\Users\Houge\Documents\SourceTree\WebDevelopment\02.JavaScript基础\05.offset, scroll, client\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -249,6 +213,10 @@
       <workItem from="1547630231622" duration="6920000" />
       <workItem from="1547716378809" duration="13191000" />
       <workItem from="1547803510508" duration="9292000" />
+      <workItem from="1548058849468" duration="285000" />
+      <workItem from="1548059272808" duration="311000" />
+      <workItem from="1548059601936" duration="60000" />
+      <workItem from="1548072527448" duration="5109000" />
     </task>
     <task id="LOCAL-00001" summary="webstorm git test">
       <created>1547287799939</created>
@@ -275,7 +243,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89817000" />
+    <option name="totallyTimeSpent" value="95582000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -287,10 +255,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="518" y="18" width="985" height="792" extended-state="0" />
+    <frame x="614" y="30" width="988" height="792" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.41938883" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.35609242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -360,27 +328,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="jquery元素操作" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/12.360开机时间关闭动画.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/13.旋转木马效果.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="163" column="41" lean-forward="true" selection-start-line="163" selection-start-column="41" selection-end-line="163" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/15.可拖拽的对话框.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1659">
-          <caret line="114" column="33" lean-forward="true" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02.JavaScript基础/02.DOM/14.阻止事件冒泡.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -668,46 +615,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04.jQuery/23.音乐导航/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="118" column="26" lean-forward="true" selection-start-line="118" selection-start-column="12" selection-end-line="118" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/04.jQuery/22.城市选择案例.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="53" column="50" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="50" />
-          <folding>
-            <element signature="e#412#416#0" expanded="true" />
-            <element signature="e#416#420#0" expanded="true" />
-            <element signature="e#454#458#0" expanded="true" />
-            <element signature="e#458#462#0" expanded="true" />
-            <element signature="e#496#500#0" expanded="true" />
-            <element signature="e#533#537#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1219">
+          <caret line="53" column="50" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/04.jQuery/23.清空与删除节点.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+        <state relative-caret-position="564">
+          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/23.音乐导航/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="118" column="26" selection-start-line="118" selection-start-column="12" selection-end-line="118" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/04.jQuery/24.微博发布案例.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="564">
           <caret line="58" column="24" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/04.jQuery/25.弹幕效果.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="102" column="38" lean-forward="true" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
+        <state relative-caret-position="403">
+          <caret line="113" column="39" lean-forward="true" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.JavaScript基础/05.offset, scroll, client/09.固定导航栏.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/26.固定导航栏.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.jQuery/27.小火箭返回顶部案例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>固定导航栏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        img {
+            vertical-align: top;
+        }
+        .container {
+            margin: 0 auto;
+            width: 1423px;
+        }
+        .main {
+            margin: 10px auto 0;
+            width: 1000px;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="top" id="topPart">
+        <img src="../02.JavaScript基础/images/top.png" alt=""/>
+    </div>
+    <div class="nav" id="navBar">
+        <img src="../02.JavaScript基础/images/nav.png" alt=""/>
+    </div>
+    <div class="main" id="mainPart">
+        <img src="../02.JavaScript基础/images/main.png" alt=""/>
+    </div>
+</div>
+
+<script src="./js/jquery-1.12.4.js" charset="utf-8"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= $('#topPart').height()) {
+                $('#navBar').addClass('fixed');
+                $('#mainPart').css('marginTop', $('#navBar').height() + 10);
+            } else {
+                $('#navBar').removeClass('fixed');
+                $('#mainPart').css('marginTop', 10);
+            }
+        });
+    });
+</script>
+</body>
+</html>

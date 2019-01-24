@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function jsonp(url, params, callback) {
+        var funcName = 'jsonp_' + Date.now() + Math.random().toString().substring(2, 5);
+
+        // 拼接参数
+        if (typeof params === 'object') {
+            var tempArr = [];
+            for (var key in params) {
+                tempArr.push(key + '=' + params[key]);
+            }
+            params = tempArr.join('&');
+        }
+
+        // 创建script标签并拼接url
+        var script = document.createElement('script');
+        script.src = url + '?' + params + '&callback=' + funcName;
+        document.body.appendChild(script);
+
+        window[funcName] = function (data) {
+            callback(data);
+
+            delete window[funcName];
+            document.body.removeChild(script);
+        }
+    }
+</script>
+</body>
+</html>

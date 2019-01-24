@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery.color.js"></script>
+<script>
+    $(function () {
+        $('div').animate({backgroundColor: 'blue'}, 4000);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>封装AJAX</title>
+</head>
+<body>
+
+<script>
+    function ajax(method, url, params, fn) {
+        var xhr;
+        if (window.XMLHttpRequest) {
+            xhr = new XMLHttpRequest();
+        } else {
+            xhr = new ActiveXObject('Microsoft.XMLHTTP');
+        }
+
+        // params若是对象，则拼接字符串
+        if (typeof params === 'object') {
+            var tempArr = [];
+            for (var key in params) {
+                tempArr.push(key + '=' + params[key]);
+            }
+            params = tempArr.join('&');
+        }
+
+        method = method.toUpperCase();
+        var data = null;
+        if (method === 'POST') {
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            data = params;
+        } else {
+            url += '?' + params;
+        }
+        xhr.open(method, url);
+        xhr.send(data);
+
+        xhr.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                // 无法在内部包含的函数中给外部函数返回值，此方法不可行
+                // return this.responseText;
+                if (fn) {
+                    fn(this.responseText);
+                }
+            }
+        };
+    }
+
+
+    ajax('GET', '/hello.php', {
+        username: 'zhangsan',
+        password: 123
+    }, function (result) {
+        if (result === '1') {
+            alert('登录成功');
+        } else {
+            alert('登录失败！');
+        }
+    });
+
+</script>
+</body>
+</html>

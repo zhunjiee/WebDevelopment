@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            margin: 100px;
+        }
+        img {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<div><img class="lazy" data-original="images/01.jpg" alt="#"></div>
+<div><img class="lazy" data-original="images/02.jpg" alt="#"></div>
+<div><img class="lazy" data-original="images/03.jpg" alt="#"></div>
+<div><img class="lazy" data-original="images/04.jpg" alt="#"></div>
+<div><img class="lazy" data-original="images/05.jpg" alt="#"></div>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery.lazyload.js"></script>
+<script>
+    $(function () {
+        $('img.lazy').lazyload({
+            event : "click"
+        });
+    });
+</script>
+</body>
+</html>

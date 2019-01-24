@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            height: 500px;
+            width: 500px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="增加" id="btn">
+<div>
+    <p>111111</p>
+    <p>111111</p>
+    <p>111111</p>
+    <p>111111</p>
+</div>
+
+
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        $('p').on('click', function () {
+            alert('哈哈哈');
+        });
+        $('div').on('click', 'p', function () {
+            alert('啊啊啊');
+        });
+        $('div').on('click', function () {
+            alert('呜呜呜');
+        });
+
+        // trigger: 触发事件
+        $('p').trigger('click');
+
+        // off: 移除事件
+        // $('p').off('click');
+
+
+        $('#btn').on('click', function () {
+            $('<p>我是新创建的元素</p>').appendTo($('div'));
+        });
+    });
+</script>
+</body>
+</html>

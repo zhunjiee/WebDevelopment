@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax</title>
+</head>
+<body>
+<form action="">
+    <label for="username">用户名：</label>
+    <input type="text" name="name" id="username">
+    <label for="password">密码：</label>
+    <input type="password" name="password" id="password">
+    <input type="button" value="登录" id="login">
+</form>
+
+<script>
+    window.onload = function () {
+        document.getElementById('login').addEventListener('click', function () {
+            var name = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            console.log(name);
+            console.log(password);
+
+            // 1. 创建XMLHttpRequest对象
+            var xhr;
+            if (window.XMLHttpRequest) {
+                xhr = new XMLHttpRequest();
+            } else {
+                xhr = new ActiveXObject('Microsoft.XMLHTTP');
+            }
+
+            // 2. 向服务器发送请求
+            var url = './check.php?username=' + name + '&password=' + password;
+            xhr.open('GET', url, true);
+            xhr.send(null);
+
+
+            // 3. 在回调函数内进行结果处理
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var data = xhr.responseText;
+                    if (data === 1) {
+                        alert('登录成功');
+                    } else {
+                        alert('登录失败');
+                    }
+                }
+            }
+        });
+    };
+</script>
+</body>
+</html>

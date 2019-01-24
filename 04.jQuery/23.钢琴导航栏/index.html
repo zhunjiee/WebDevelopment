@@ -48,6 +48,7 @@
     </style>
 </head>
 <body>
+
 <div class="nav">
     <ul>
         <li>
@@ -103,6 +104,7 @@
 
 </div>
 
+<audio src="mp3/1.ogg" controls></audio>
 
 <script src="../js/jquery-1.12.4.js"></script>
 <script>
@@ -119,6 +121,28 @@
             $audios.get(idx).play();
         }).mouseleave(function () {
             $(this).children('span').stop().animate({top: 60});
+        });
+        
+        
+        var flag = true;
+        // 按数字1-9，弹钢琴
+        $(document).on('keydown', function (e) {
+            if (flag) {
+                flag = false;
+                var code = e.keyCode;
+                if (code >= 49 && code <= 57) {
+                    $('.nav li').eq(code - 49).mouseenter();
+                }
+            }
+        });
+        $(document).on('keyup', function (e) {
+            if (flag === false) {
+                flag = true;
+                var code = e.keyCode;
+                if (code >= 49 && code <= 57) {
+                    $('.nav li').eq(code - 49).mouseleave();
+                }
+            }
         });
     });
 </script>
